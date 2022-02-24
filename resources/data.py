@@ -127,11 +127,11 @@ RAID = [
     "TERI MAAKO KHULE BAJAR ME CHOD DALA 🤣🤣💋",
 ]
 
-MightyX = [2007758161, 1972252396]
+FlashX = [5120313803]
 
 REPLYRAID = [
-    "MADARCHOD",
-    "BHOSDIKE",
+    "MADARCHOD KE BACHEE",
+    "BHOSDIKE KE CHUDEE HUE",
     "LAAAWEEE KE BAAAAAL",
     "MAAAAR KI JHAAAAT KE BBBBBAAAAALLLLL",
     "MADRCHOD..",
@@ -252,8 +252,8 @@ REPLYRAID = [
     "Teri maa ka bhosda",
     "Teri maa ki chut",
     "Tere gaand mein keede paday",
-    "Ullu ke pathe",
-    "SUNN MADERCHOD",
+    "Ullu ke pathe BAAP HU TERA",
+    "SUNN MADERCHOD TERA BAAP KRISHNA HAI",
     "TERI MAA KA BHOSDA",
     "BEHEN K LUND",
     "TERI MAA KA CHUT KI CHTNIIII",
@@ -307,7 +307,7 @@ REPLYRAID = [
     "TERI SEXY BAHEN KI CHUT OP",
 ]
 
-GROUP = [-1001451242105, -1001644444780]
+GROUP = [-1001665695634, -1001676580728]
 
 
 PORMS = [

@@ -1,1 +1,1 @@
-Mig: python -m MightyXSpam
+Fla: python -m FlashXSpamBot

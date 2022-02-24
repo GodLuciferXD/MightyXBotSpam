@@ -3,28 +3,28 @@ import os
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon import events, Button
 from telethon.tl.custom import button
-from .. import Mig, Mig2, Mig3, Mig4, Mig5, Mig6, Mig7, Mig8, Mig9, Mig10, ALIVE_PIC, OWNER_ID
-from MightyXSpam.plugins.help import *
+from .. import Fla, Fla2, Fla3, Fla4, Fla5, Fla6, Fla7, Fla8, Fla9, Fla10, ALIVE_PIC, OWNER_ID
+from FlashXSpamBot.plugins.help import *
 
 
-MIG_IMG = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/2ead82e77994638db6e39.jpg"
+Fla_IMG = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/bb8fd844194361ffea7e5.jpg"
 
-Mig_Button = [
+Fla_Button = [
         [
-        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/@MightyXSupport")
+        Button.url("• sᴜᴘᴘᴏʀᴛ •", "https://t.me/@Flash_Support_Group")
         ],
         [
         Button.inline("• ᴄᴍᴅs •", data="help_back")
         ]
         ]
                
-MigX_Button = [
+FlaX_Button = [
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/MightyXUpdates"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/MightyXSupport")
+        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Flash_Updates"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Flash_Support_Group")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/BeingMighty/MightyXBotSpam")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Alcoholic-Krish/FlashXSpamBot")
         ]
         ]
         
@@ -32,36 +32,36 @@ MigX_Button = [
 #USERS 
 
 
-@Mig.on(events.NewMessage(pattern="/start"))
-@Mig2.on(events.NewMessage(pattern="/start"))
-@Mig3.on(events.NewMessage(pattern="/start"))
-@Mig4.on(events.NewMessage(pattern="/start"))
-@Mig5.on(events.NewMessage(pattern="/start"))
-@Mig6.on(events.NewMessage(pattern="/start"))
-@Mig7.on(events.NewMessage(pattern="/start"))
-@Mig7.on(events.NewMessage(pattern="/start"))
-@Mig8.on(events.NewMessage(pattern="/start"))
-@Mig9.on(events.NewMessage(pattern="/start"))
-@Mig10.on(events.NewMessage(pattern="/start"))
+@Fla.on(events.NewMessage(pattern="/start"))
+@Fla2.on(events.NewMessage(pattern="/start"))
+@Fla3.on(events.NewMessage(pattern="/start"))
+@Fla4.on(events.NewMessage(pattern="/start"))
+@Fla5.on(events.NewMessage(pattern="/start"))
+@Fla6.on(events.NewMessage(pattern="/start"))
+@Fla7.on(events.NewMessage(pattern="/start"))
+@Fla7.on(events.NewMessage(pattern="/start"))
+@Fla8.on(events.NewMessage(pattern="/start"))
+@Fla9.on(events.NewMessage(pattern="/start"))
+@Fla10.on(events.NewMessage(pattern="/start"))
 async def start(event):              
     if event.is_private:
        MigBot = await event.client.get_me()
-       bot_id = MigBot.first_name
-       bot_username = MigBot.username
+       bot_id = FlaBot.first_name
+       bot_username = FlaBot.username
        replied_user = await event.client(GetFullUserRequest(event.sender_id))
-       TheMighty = event.chat_id
+       TheFlashy = event.chat_id
        firstname = replied_user.user.first_name
-       ownermsg = f"**Hello Boss !!, Its Me {bot_id}, Your Spam Bot !! \n\n Click Below Buttons For Help. 🌚**"
-       usermsg = f"**Hey !! {firstname} ! Nice To Meet You, Well I Am {bot_id}, A Powerfull Spam Bot.** \n\n**If You Want Your Own Spam Bots You Can Deploy From Button Below.** \n\n**Powered By : [𝐌𝐈𝐆𝐇𝐓𝐘 𝐗](https://t.me/MightyXSupport)**"
+       ownermsg = f"**Hello Chacha !!, Its Me {bot_id}, Your Bot Banya hu Krishna ne  !! \n\n Click Below Buttons For Help. 🌚**"
+       usermsg = f"**Hey !! {firstname} ! Nice To Meet You, Well I Am {bot_id}, A Powerfull Spam Bot Made By My Real Owner Krishna and Jisko dm Kiya wo fake h.** \n\n**If You Want Your Own Spam Bots You Can Deploy From Button Below.** \n\n**Powered By : [Fʟᴀsʜ X](https://t.me/Flash_Support_Group)**"
        if event.sender_id == OWNER_ID:
-            await event.client.send_file(TheMighty,
-                  MIG_IMG,
+            await event.client.send_file(TheFlashy,
+                  FLA_IMG,
                   caption=ownermsg, 
-                  buttons=Mig_Button)
+                  buttons=Fla_Button)
        else:
-            await event.client.send_file(TheMighty,
-                  MIG_IMG,
+            await event.client.send_file(TheFlashy,
+                  FLA_IMG,
                   caption=usermsg, 
-                  buttons=MigX_Button)
+                  buttons=FLAX_Button)
                 
 

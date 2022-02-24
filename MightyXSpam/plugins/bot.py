@@ -3,48 +3,48 @@ import asyncio
 import sys
 import git
 import heroku3
-from MightyXSpam import Mig, Mig2, Mig3, Mig4, Mig5 , Mig6, Mig7, Mig8, Mig9, Mig10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, mightyversion
-from MightyXSpam import CMD_HNDLR as hl
+from FlashXSpamBot import Fla, Fla2, Fla3, Fla4, Fla5 , Fla6, Fla7, Fla8, Fla9, Fla10, OWNER_ID, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY, flashyversion
+from FlashXSpamBot import CMD_HNDLR as hl
 from telethon.tl.functions.users import GetFullUserRequest
-from MightyXSpam import ALIVE_PIC
+from FlashXSpamBot import ALIVE_PIC
 from telethon import events, version, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
 
-MIG_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/2ead82e77994638db6e39.jpg"
+MIG_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/bb8fd844194361ffea7e5.jpg"
   
 
-mighty = "╚»★ 𝗠𝗶𝗴𝗵𝘁𝘆𝗫𝗦𝗽𝗮𝗺 𝗶𝘀 𝗛𝗲𝗿𝗲 ★«╝\n\n"
-mighty += f"═══════════════════\n"
-mighty += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
-mighty += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
-mighty += f"• **ᴍɪɢʜᴛʏXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{mightyversion}`\n"
-mighty += f"═══════════════════\n\n"   
+flashy = "╚»★ ғʟᴀsʜxsᴘᴀᴍʙᴏᴛ 𝗶𝘀 𝗛𝗲𝗿𝗲 ★«╝\n\n"
+flashy += f"═══════════════════\n"
+flashy += f"• **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
+flashy += f"• **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
+flashy += f"• **ғʟᴀsʜxsᴘᴀᴍʙᴏᴛ ᴠᴇʀsɪᴏɴ**  : `{flashyversion}`\n"
+flashy += f"═══════════════════\n\n"   
 
                                   
-@Mig.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig2.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig3.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig4.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig5.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig6.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig7.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig8.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig9.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
-@Mig10.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla2.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla3.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla4.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla5.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla6.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla7.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla8.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla9.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
+@Fla10.on(events.NewMessage(incoming=True, pattern=r"\%salive(?: |$)(.*)" % hl))
 async def alive(event):
   if event.sender_id in SUDO_USERS:
      await event.client.send_file(event.chat_id,
-                                  MIG_PIC,
+                                  FLA_PIC,
                                   caption=mighty,
                                   buttons=[
         [
-        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/MightyXUpdates"),
-        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/MightyXSupport")
+        Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Flash_Updates"),
+        Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Flash_Support_Group")
         ],
         [
-        Button.url("• ʀᴇᴘᴏ •", "https://github.com/BeingMighty/MightyXBotSpam")
+        Button.url("• ʀᴇᴘᴏ •", "https://github.com/Alcoholic-Krish/FlashXSpamBot")
         ]
         ]
         )
@@ -76,55 +76,54 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-@Mig.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig3.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig4.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig5.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig6.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig7.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
-@Mig10.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla2.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla3.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla4.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla5.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla6.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla7.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla8.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla9.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
+@Fla10.on(events.NewMessage(incoming=True, pattern=r"\%sping(?: |$)(.*)" % hl))
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        text = "Pong!"
+        text = "Hᴍᴍᴍ Mᴇ Zɪɴᴅᴀ  Hᴜ ᴅᴇᴋʜᴏɢᴇ Pɪɴɢ Pᴏɴɢ Tɪɴɢ Tᴏɴɢ ɢɪʟʟɪ Gɪʟʟɪ Cʜᴜᴜ👻👻!"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀\n▒█▀▀▄ ▒█░░▒█ ░▒█░░\n▒█▄▄█ ▒█▄▄▄█ ░▒█░░\n\nϟ ᴍɪɢʜᴛʏ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs")
-        
+        await event.edit(f"▒█▀▀█ ▒█▀▀▀█ ▀▀█▀▀\n▒█▀▀▄ ▒█░░▒█ ░▒█░░\n▒█▄▄█ ▒█▄▄▄█ ░▒█░░\n\nϟ Fʟᴀsʜ X Sᴘᴀᴍ ϟ︎ `{fs}` ғs")
         
 
-@Mig.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig2.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig3.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig4.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig5.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig6.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig7.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig8.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig9.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
-@Mig10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla2.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla3.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla4.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla5.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla6.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla7.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla8.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla9.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
+@Fla10.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "𝗥𝗲𝘀𝘁𝗮𝗿𝘁𝗶𝗻𝗴 𝗬𝗼𝘂𝗿 𝗠𝗶𝗴𝗵𝘁𝘆 𝗫 𝗦𝗽𝗮𝗺... | Please Wait Few Seconds."
+        text = "Cʜᴀʟᴏ Aʙ ᴊᴀᴀᴋʀ  Sᴏ ᴊᴀᴛᴀ ʜᴜ Bʏᴇ Bʏᴇ... | Please Wait Few Hours Lmao majak tha bhai kar lena use 2min baad."
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
-            await Mig.disconnect()
+            await Fla.disconnect()
         except Exception:
             pass
         try:
-            await Mig2.disconnect()
+            await Fla2.disconnect()
         except Exception:
             pass
         try:
-            await Mig3.disconnect()
+            await Fla3.disconnect()
         except Exception:
             pass
         try:
-            await Mig4.disconnect()
+            await Fla4.disconnect()
         except Exception:
             pass
         try:
@@ -132,23 +131,23 @@ async def restart(e):
         except Exception:
             pass
         try:
-            await Mig6.disconnect()
+            await Fla6.disconnect()
         except Exception:
             pass
         try:
-            await Mig7.disconnect()
+            await Fla7.disconnect()
         except Exception:
             pass
         try:
-            await Mig8.disconnect()
+            await Fla8.disconnect()
         except Exception:
             pass
         try:
-            await Mig9.disconnect()
+            await Fla9.disconnect()
         except Exception:
             pass
         try:
-            await Mig10.disconnect()
+            await Fla10.disconnect()
         except Exception:
             pass
 
@@ -160,11 +159,11 @@ Heroku = heroku3.from_key(HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
 sudousers = os.environ.get("SUDO_USER", None)
 
-@Mig.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
+@Fla.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
     if event.sender_id == OWNER_ID:
         ok = await event.reply("Adding User As Sudo...")
-        mighty = "SUDO_USER"
+         flashy = "SUDO_USER"
         if HEROKU_APP_NAME is not None:
             app = Heroku.app(HEROKU_APP_NAME)
         else:
@@ -182,7 +181,7 @@ async def tb(event):
         else:
             newsudo = f"{target}"
         await ok.edit(f"**Added `{target}` ** As Sudo User ✨ || Restarting... Please Wait Few Seconds.")
-        heroku_var[mighty] = newsudo   
+        heroku_var[flashy] = newsudo   
    
      
 async def get_user(event):

@@ -1,5 +1,5 @@
 build:
   docker:
-    Mig: Dockerfile
+    Fla: Dockerfile
 run:
-  Mig: python3 -m MightyXSpam
+  Fla: python3 -m FlashXSpamBot

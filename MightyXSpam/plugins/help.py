@@ -1,25 +1,25 @@
-from MightyXSpam import Mig, Mig2, Mig3, Mig4, Mig5, Mig6, Mig7, Mig8, Mig9, Mig10, SUDO_USERS
+from FlashXSpam import Fla, Fla2, Fla3, Fla4, Fla5, Fla6, Fla7, Fla8, Fla9,  Fla10, SUDO_USERS
 from telethon import events, Button
 from telethon.tl.custom import button
 from time import time
 from datetime import datetime
-from MightyXSpam import CMD_HNDLR as hl
+from FlashXSpam import CMD_HNDLR as hl
     
-HELP_PIC = "https://telegra.ph/file/f6ea9ab7683ec1d5f8f57.jpg"
+HELP_PIC = "https://telegra.ph/file/ea225d8d3d9cb0abf9f32.jpg"
 
-Mig_Help = "__Click On Below Buttons For Help__"
+Fla_Help = "__Click On Below Buttons For Help__"
 
 
-@Mig.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
-@Mig10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla2.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla3.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla4.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla5.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla6.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla7.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla8.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla9.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
+@Fla10.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
     if event.sender_id in SUDO_USERS:
        await event.client.send_file(event.chat_id,
@@ -34,10 +34,10 @@ async def help(event):
             Button.inline("• Extra •", data="extra"),
            ],
            [    
-            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/MightyXUpdates")
+            Button.url("ᴄʜᴀɴɴᴇʟ", "https://t.me/Flash_Updates")
            ],
            [
-           Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/MightyXSupport")
+           Button.url("sᴜᴘᴘᴏʀᴛ", "https://t.me/Flash_Support_Group")
            ],
            ],
            )              
@@ -67,7 +67,7 @@ ii) {hl}leave : Type in the Group bot will auto leave that group
 **Packspam**: Sticker Pack Spam
 i) {hl}packspam (replying to any sticker)
 
-**© @MightyXSupport**
+**© @Flash_Support_Group**
 """
 
                  
@@ -96,7 +96,7 @@ i) {hl}dreplyraid <replying to user>
 ii) {hl}dreplyraid <username>
 
 
-**© @MightyXSupport**
+**© @Flash_Support_Group**
 """
 
 spam_msg = f"""
@@ -125,24 +125,24 @@ i) {hl}pornspam <count>
 Command:
 i) {hl}hang <counter> (you can reply any message if you want bot to reply that message and do spamming)
 
-** © @MightyXSupport**
+** © @Flash_Support_Group**
 """                     
            
            
-@Mig.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig2.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig3.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig4.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig5.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig6.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig7.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig8.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig9.on(events.CallbackQuery(pattern=r"help_back"))
-@Mig10.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla2.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla3.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla4.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla5.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla6.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla7.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla8.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla9.on(events.CallbackQuery(pattern=r"help_back"))
+@Fla10.on(events.CallbackQuery(pattern=r"help_back"))
 async def helpback(event):
    if event.query.user_id in SUDO_USERS:    
       await event.edit(
-            Mig_Help,
+           Fla_Help,
             buttons=[
                 [
             Button.inline("Spam", data="spam"),
@@ -161,22 +161,22 @@ async def helpback(event):
         )           
    else:
         Alert = (
-                "Noob !! Make Your Own Mighty X Spam Bots !! @MightyXSupport"
+                "BSDK JAAKE KUDH KA BANA DUSARO KA USE KARTA GANDU 👿👿 @Flash_Support_Group"
             )
         await event.answer(Alert, cache_time=0, alert=True)
       
            
                       
-@Mig.on(events.CallbackQuery(pattern=r"spam"))
-@Mig2.on(events.CallbackQuery(pattern=r"spam"))
-@Mig3.on(events.CallbackQuery(pattern=r"spam"))
-@Mig4.on(events.CallbackQuery(pattern=r"spam"))
-@Mig5.on(events.CallbackQuery(pattern=r"spam"))
-@Mig6.on(events.CallbackQuery(pattern=r"spam"))
-@Mig7.on(events.CallbackQuery(pattern=r"spam"))
-@Mig8.on(events.CallbackQuery(pattern=r"spam"))
-@Mig9.on(events.CallbackQuery(pattern=r"spam"))
-@Mig10.on(events.CallbackQuery(pattern=r"spam"))
+@Fla.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla2.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla3.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla4.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla5.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla6.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla7.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla8.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla9.on(events.CallbackQuery(pattern=r"spam")) 
+@Fla10.on(events.CallbackQuery(pattern=r"spam"))
 async def help_spam(event):
    if event.query.user_id in SUDO_USERS:    
        await event.edit(
@@ -189,21 +189,21 @@ async def help_spam(event):
             ) 
    else:
         Alert = (
-                "Noob !! Make Your Own Mighty X Spam Bots !! @MightyXSupport"
+                "BSDK JAAKE KUDH KA BANA DUSARO KA USE KARTA GANDU 👿👿 @Flash_Support_Group"
             )
         await event.answer(Alert, cache_time=0, alert=True)
                  
                                                        
-@Mig.on(events.CallbackQuery(pattern=r"raid"))
-@Mig2.on(events.CallbackQuery(pattern=r"raid"))
-@Mig3.on(events.CallbackQuery(pattern=r"raid"))
-@Mig4.on(events.CallbackQuery(pattern=r"raid"))
-@Mig5.on(events.CallbackQuery(pattern=r"raid"))
-@Mig6.on(events.CallbackQuery(pattern=r"raid"))
-@Mig7.on(events.CallbackQuery(pattern=r"raid"))
-@Mig8.on(events.CallbackQuery(pattern=r"raid"))
-@Mig9.on(events.CallbackQuery(pattern=r"raid"))
-@Mig10.on(events.CallbackQuery(pattern=r"raid"))
+@Fla.on(events.CallbackQuery(pattern=r"raid"))
+@Fla2.on(events.CallbackQuery(pattern=r"raid"))
+@Fla3.on(events.CallbackQuery(pattern=r"raid"))
+@Fla4.on(events.CallbackQuery(pattern=r"raid"))
+@Fla5.on(events.CallbackQuery(pattern=r"raid"))
+@Fla6.on(events.CallbackQuery(pattern=r"raid"))
+@Fla7.on(events.CallbackQuery(pattern=r"raid"))
+@Fla8.on(events.CallbackQuery(pattern=r"raid"))
+@Fla9.on(events.CallbackQuery(pattern=r"raid"))
+@Fla10.on(events.CallbackQuery(pattern=r"raid"))
 async def help_raid(event):
      if event.query.user_id in SUDO_USERS:
         await event.edit(
@@ -216,22 +216,22 @@ async def help_raid(event):
             )  
      else:
         Alert = (
-                "Noob !! Make Your Own Mighty X Spam Bots !! @MightyXSupport"
+                "BSDK JAAKE KUDH KA BANA DUSARO KA USE KARTA GANDU 👿👿 @Flash_Support_Group"
             )
         await event.answer(Alert, cache_time=0, alert=True)
        
 
 
-@Mig.on(events.CallbackQuery(pattern=r"extra"))
-@Mig2.on(events.CallbackQuery(pattern=r"extra"))
-@Mig3.on(events.CallbackQuery(pattern=r"extra"))
-@Mig4.on(events.CallbackQuery(pattern=r"extra"))
-@Mig5.on(events.CallbackQuery(pattern=r"extra"))
-@Mig6.on(events.CallbackQuery(pattern=r"extra"))
-@Mig7.on(events.CallbackQuery(pattern=r"extra"))
-@Mig8.on(events.CallbackQuery(pattern=r"extra"))
-@Mig9.on(events.CallbackQuery(pattern=r"extra"))
-@Mig10.on(events.CallbackQuery(pattern=r"extra"))
+@Fla.on(events.CallbackQuery(pattern=r"extra"))
+@Fla2.on(events.CallbackQuery(pattern=r"extra"))
+@Fla3.on(events.CallbackQuery(pattern=r"extra"))
+@Fla4.on(events.CallbackQuery(pattern=r"extra"))
+@Fla5.on(events.CallbackQuery(pattern=r"extra"))
+@Fla6.on(events.CallbackQuery(pattern=r"extra"))
+@Fla7.on(events.CallbackQuery(pattern=r"extra"))
+@Fla8.on(events.CallbackQuery(pattern=r"extra"))
+@Fla9.on(events.CallbackQuery(pattern=r"extra"))
+@Fla10.on(events.CallbackQuery(pattern=r"extra"))
 async def help_extra(event):
    if event.query.user_id in SUDO_USERS:
         await event.edit(
@@ -244,7 +244,7 @@ async def help_extra(event):
             )
    else:
         Alert = (
-                "Noob !! Make Your Own Mighty X Spam Bots !! @MightyXSupport"
+                "BSDK JAAKE KUDH KA BANA DUSARO KA USE KARTA GANDU 👿👿 @Flash_Support_Group"
             )
         await event.answer(Alert, cache_time=0, alert=True)
 

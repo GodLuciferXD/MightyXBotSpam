@@ -1,20 +1,20 @@
-# MightyXBotSpam || @MightyXSupport
+# FlashXSpamBot || @Flash_Support_Group
 
 import asyncio
 import sys
 from sys import argv
 import glob
 from pathlib import Path
-from MightyXSpam.utils import load_plugins
+from FlashXSpam.utils import load_plugins
 import logging
 from telethon import events
-from . import Mig, Mig2, Mig3, Mig4, Mig5, Mig6, Mig7, Mig8, Mig9, Mig10
+from . import Fla, Fla2, Fla3, Fla4, Fla5, Fla6, Fla7, Fla8, Fla9, Fla10
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
 
-path = "MightyXSpam/plugins/*.py"
+path = "FlashXSpam/plugins/*.py"
 files = glob.glob(path)
 for name in files:
     with open(name) as a:
@@ -22,35 +22,35 @@ for name in files:
         plugin_name = patt.stem
         load_plugins(plugin_name.replace(".py", ""))
 
-print("Mighty X Bot Spam Successfully Deployed !!")
-print("Enjoy! Do Visit @MightyXSupport")
+print("JAA BETA MOJ KAR BAN GYA TERA FLASH SPAM BOT  !!")
+print("YEK GROUP JOIN KARLE MUNNA @Flash_Support_Group)
 
 if __name__ == "__main__":
-    Mig.run_until_disconnected()
+    Fla.run_until_disconnected()
     
 if __name__ == "__main__":
-    Mig2.run_until_disconnected()
+    Fla2.run_until_disconnected()
 
 if __name__ == "__main__":
-    Mig3.run_until_disconnected()
+    Fla3.run_until_disconnected()
     
 if __name__ == "__main__":
-    Mig4.run_until_disconnected()
+    Fla4.run_until_disconnected()
 
 if __name__ == "__main__":
-    Mig5.run_until_disconnected()
+    Fla5.run_until_disconnected()
     
 if __name__ == "__main__":
-    Mig6.run_until_disconnected()
+    Fla6.run_until_disconnected()
     
 if __name__ == "__main__":
-    Mig7.run_until_disconnected()
+    Fla7.run_until_disconnected()
 
 if __name__ == "__main__":
-    Mig8.run_until_disconnected()
+    Fla8.run_until_disconnected()
     
 if __name__ == "__main__":
-    Mig9.run_until_disconnected()
+    Fla9.run_until_disconnected()
 
 if __name__ == "__main__":
-    Mig10.run_until_disconnected()    
+    Fla10.run_until_disconnected()    
